@@ -20,7 +20,7 @@ class Email extends AppModel {
       ->to($params['to'])
       ->subject($params['subject'])
       ->template($params['template'], $params['layout'])
-      ->viewVars($params['vars']);
+      ->viewVars(unserialize($params['vars']));
 
     return $result;
   }
