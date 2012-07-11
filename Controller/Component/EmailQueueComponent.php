@@ -1,6 +1,6 @@
 <?php
 
-class EmailComponent extends Component {
+class EmailQueueComponent extends Component {
   private $controller;
 
   public function initialize(&$controller) {
