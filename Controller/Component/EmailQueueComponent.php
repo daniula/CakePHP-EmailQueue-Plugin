@@ -3,7 +3,7 @@
 class EmailQueueComponent extends Component {
   private $controller;
 
-  public function initialize(&$controller) {
+  public function initialize(Controller $controller) {
     $this->controller = $controller;
   }
 
